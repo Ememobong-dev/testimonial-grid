@@ -4,6 +4,8 @@ import jeanette from "../../public/images/image-jeanette.jpg"
 import jonathan from "../../public/images/image-jonathan.jpg"
 import kira from "../../public/images/image-kira.jpg"
 import patrick from "../../public/images/image-patrick.jpg"
+import { Col, Row } from "antd";
+import Card from "@/components/Card";
 
 
 const testimonial = [
@@ -44,7 +46,26 @@ const testimonial = [
 export default function Home() {
   return (
     <div>
-      <h1>Hello World</h1>
+      <Row justify={'center'}>
+        <Col span={12}>
+          <Col span={8}>
+            <Card bgColor="red" reviewerImg={testimonial[0].image} reviewerHighlight={testimonial[0].highlight} reviewerName={testimonial[0].name} reviewerStatus={testimonial[0].status} review={testimonial[0].testimonial} />
+          </Col>
+          <Col span={4}>
+            <Card bgColor="red" reviewerImg={testimonial[0].image} reviewerHighlight={testimonial[0].highlight} reviewerName={testimonial[0].name} reviewerStatus={testimonial[0].status} review={testimonial[0].testimonial} />
+          </Col>
+          <Col span={4}>
+            <Card bgColor="red" reviewerImg={testimonial[0].image} reviewerHighlight={testimonial[0].highlight} reviewerName={testimonial[0].name} reviewerStatus={testimonial[0].status} review={testimonial[0].testimonial} />
+          </Col>
+          <Col span={8}>
+            <Card bgColor="red" reviewerImg={testimonial[0].image} reviewerHighlight={testimonial[0].highlight} reviewerName={testimonial[0].name} reviewerStatus={testimonial[0].status} review={testimonial[0].testimonial} />
+          </Col>
+        </Col>
+        <Col span={12}>
+          <Card bgColor="red" reviewerImg={testimonial[0].image} reviewerHighlight={testimonial[0].highlight} reviewerName={testimonial[0].name} reviewerStatus={testimonial[0].status} review={testimonial[0].testimonial} />
+
+        </Col>
+      </Row>
 
     </div>
 
