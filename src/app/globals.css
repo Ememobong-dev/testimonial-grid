@@ -7,6 +7,19 @@
   --foreground: #171717;
 }
 
+
+
+@font-face {
+  font-family: "barlow-regular";
+  src: url(../assets/fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Medium.ttf);
+}
+
+@font-face {
+  font-family: "barlow-bold";
+  src: url(../assets/fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Bold.ttf);
+}
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
